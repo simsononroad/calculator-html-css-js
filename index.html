@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="calculator">
+        <div id="display"></div>
+        
+        <div id="keys">
+            <button onclick="apendToDisplay('+')">+</button>
+            <button onclick="apendToDisplay('1')">1</button>
+            <button onclick="apendToDisplay('2')">2</button>
+            <button onclick="apendToDisplay('3')">3</button>
+            <button onclick="apendToDisplay('-')">-</button>
+            <button onclick="apendToDisplay('4')">4</button>
+            <button onclick="apendToDisplay('5')">5</button>
+            <button onclick="apendToDisplay('6')">6</button>
+            <button onclick="apendToDisplay('/')">/</button>
+            <button onclick="apendToDisplay('7')">7</button>
+            <button onclick="apendToDisplay('8')">8</button>
+            <button onclick="apendToDisplay('9')">9</button>
+            <button onclick="apendToDisplay('*')">*</button>
+            <p class="space"></p>
+            <button onclick="torol()" class="btn operator">c</button>
+            <button onclick="resoult()" class="btn operator">=</button>
+        </div>
+    </div>
+</body>
+</html>

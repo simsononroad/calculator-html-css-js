@@ -1,0 +1,95 @@
+:root{
+    --size: 100px;
+    --border-radius: 100px;
+    --font-size: 3rem;
+    --calculator-bg-color: rgba(0, 0, 0, 0.733);
+    --calculator-width: 525px;
+
+    --btn-color-hover: rgba(0, 0, 0, 0.335);
+    --btn-color: rgba(0, 0, 0, 0.15);
+    --btn-color-action: rgba(0, 0, 0, 0.466);
+
+    --operator-color: hsla(39, 100%, 50%, 0.422);
+    --operator-color-hover: hsla(39, 100%, 50%, 0.607);
+    --operator-color-action: hsla(39, 100%, 50%, 0.307);
+}
+
+button{
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size);
+    border: none;
+    background-color: var(--btn-color);
+    &:hover{
+        background-color: var(--btn-color-hover);
+    }
+    &:active{
+        background-color: var(--btn-color-action);
+    }
+}
+
+.operator{
+    background-color: var(--operator-color);
+    &:hover{
+        background-color: var(--operator-color-hover);
+    }
+    &:active{
+        background-color: var(--operator-color-action);
+    }
+}
+
+.space{
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size);
+    border: none;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+
+#calculator{
+    width: var(--calculator-width);
+    background-color: var(--calculator-bg-color);
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+#display{
+    width: 99%;
+    height: 100px;
+    color: white;
+    font-size: 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.733) 0%, rgb(69, 69, 69) 100%);
+    border: none;
+    cursor: not-allowed; 
+
+}
+#display:focus{
+    border: none;
+    outline: none;
+    outline-width: 0;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
