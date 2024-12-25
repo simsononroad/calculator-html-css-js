@@ -41,7 +41,7 @@ button{
 
 .space{
     width: var(--size);
-    height: var(--size);
+
     border-radius: var(--border-radius);
     font-size: var(--font-size);
     border: none;
@@ -50,10 +50,13 @@ button{
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 19px;
     padding: 25px;
 }
 
+.res{
+    border-radius: 10px;
+}
 
 #calculator{
     width: var(--calculator-width);
@@ -63,6 +66,7 @@ button{
     align-items: center;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
     
 }
 
