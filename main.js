@@ -1,6 +1,8 @@
 
 var res = ""
 var resReady = false
+
+
 function apendToDisplay(input){
     //display.value += input;
 
@@ -38,4 +40,5 @@ function resoult(){
         torol()
     }
 }
+
 
