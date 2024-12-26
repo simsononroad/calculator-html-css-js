@@ -27,14 +27,17 @@ function torol(){
 function resoult(){
     if (resReady == false){
         try{
-            if(res in "/0"){
-                var display = document.getElementById("display")
-                display.innerText="Error"
-                resReady = true
-            }else{
-                var eredmeny = eval(res)
+            var display = document.getElementById("display")
+            display.innerText="Error"
+            resReady = true
+            var eredmeny = eval(res)
+            if (eredmeny != "Infinity"){
                 var display = document.getElementById("display")
                 var eredmesny = display.innerText += "="+eredmeny
+                resReady = true
+            }else{
+                var display = document.getElementById("display")
+                display.innerText="Error"
                 resReady = true
             }
 
