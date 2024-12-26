@@ -2,7 +2,6 @@
 var res = ""
 var resReady = false
 
-
 function apendToDisplay(input){
     //display.value += input;
 
@@ -28,7 +27,7 @@ function resoult(){
     if (resReady == false){
         try{
             var display = document.getElementById("display")
-            display.innerText="Error"
+
             resReady = true
             var eredmeny = eval(res)
             if (eredmeny != "Infinity"){
@@ -37,7 +36,7 @@ function resoult(){
                 resReady = true
             }else{
                 var display = document.getElementById("display")
-                display.innerText="Error"
+                display.innerText="Error: cannot be divided by 0"
                 resReady = true
             }
 

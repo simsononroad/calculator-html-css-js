@@ -1,5 +1,6 @@
 :root{
     --size: 100px;
+    --phone-size: 90px;
     --border-radius: 100px;
     --font-size: 3rem;
     --calculator-bg-color: rgba(0, 0, 0, 0.733);
@@ -99,4 +100,151 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+@media screen and (max-width: 600px), (max-height: 730px) {
+    #calculator{
+        width: 100%;
+        height: 100%;
+    }
+    .space{
+        width: var(--phone-size);
+    
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        border: none;
+    }
+    
+    #keys{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+    button{
+        width: var(--phone-size);
+        height: var(--phone-size);
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        border: none;
+        background-color: var(--btn-color);
+        &:hover{
+            background-color: var(--btn-color-hover);
+        }
+        &:active{
+            background-color: var(--btn-color-action);
+        }
+    }
+    
+    .operator{
+        background-color: var(--operator-color);
+        &:hover{
+            background-color: var(--operator-color-hover);
+        }
+        &:active{
+            background-color: var(--operator-color-action);
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 413px), (max-height: 615px) {
+    button{
+        width: 70px;
+        height: 70px;
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        border: none;
+        background-color: var(--btn-color);
+        &:hover{
+            background-color: var(--btn-color-hover);
+        }
+        &:active{
+            background-color: var(--btn-color-action);
+        }
+    }
+    .space{
+        width: 70px;
+    
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        border: none;
+    }
+}
+
+@media screen and (max-width: 333px), (max-height: 514px) {
+    button{
+        width: 60px;
+        height: 60px;
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        border: none;
+        background-color: var(--btn-color);
+        &:hover{
+            background-color: var(--btn-color-hover);
+        }
+        &:active{
+            background-color: var(--btn-color-action);
+        }
+    }
+    .space{
+        width: 60px;
+    
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        border: none;
+    }
+}
+
+
+@media screen and (max-width: 293px), (max-height: 463px) {
+    button{
+        width: 60px;
+        height: 60px;
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        border: none;
+        background-color: var(--btn-color);
+        &:hover{
+            background-color: var(--btn-color-hover);
+        }
+        &:active{
+            background-color: var(--btn-color-action);
+        }
+    }
+    .space{
+        width: 60px;
+    
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        border: none;
+    }
+}
+
+@media screen and (max-width: 290px), (max-height: 458px) {
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        border: none;
+        background-color: var(--btn-color);
+        &:hover{
+            background-color: var(--btn-color-hover);
+        }
+        &:active{
+            background-color: var(--btn-color-action);
+        }
+    }
+    .space{
+        width: 50px;
+    
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        border: none;
+    }
 }
