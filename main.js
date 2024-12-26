@@ -30,7 +30,12 @@ function resoult(){
 
             resReady = true
             var eredmeny = eval(res)
-            if (eredmeny != "Infinity"){
+            
+            if (res == "") {
+                var display = document.getElementById("display")
+                var eredmesny = "Error: Perform an operation"
+                resReady = true
+            }else if (eredmeny != "Infinity"){
                 var display = document.getElementById("display")
                 var eredmesny = display.innerText += "="+eredmeny
                 resReady = true
@@ -39,6 +44,8 @@ function resoult(){
                 display.innerText="Error: cannot be divided by 0"
                 resReady = true
             }
+            
+            
 
         }catch(error){
             var display = document.getElementById("display")
