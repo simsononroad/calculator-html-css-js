@@ -1,6 +1,9 @@
 
 var res = ""
 var resReady = false
+a = "12.0012"
+
+
 
 function apendToDisplay(input){
     //display.value += input;
@@ -8,7 +11,7 @@ function apendToDisplay(input){
     //test.push(input)
     //alert(test)
     if (resReady == false){
-        var display = document.getElementById("display")
+        
         var eredmeny = display.innerText += input
         res = eredmeny
     }else{
@@ -29,7 +32,8 @@ function resoult(){
             var display = document.getElementById("display")
 
             resReady = true
-            var eredmeny = eval(res)
+            var eredmeny = String(eval(res))
+            console.log(eredmeny)
             
             if (res == "") {
                 var display = document.getElementById("display")
@@ -44,6 +48,13 @@ function resoult(){
                 display.innerText="Error: cannot be divided by 0"
                 resReady = true
             }
+            console.log(eredmeny.length)
+            if (eredmeny.length >= 6){
+                var display = document.getElementById("display")
+                display.innerText=""
+                display.innerText="="+eredmeny
+                resReady=true
+            }
             
             
 
@@ -57,6 +68,10 @@ function resoult(){
     }
 }
 
-
+function pi(){
+    var pi = 3.14
+    var display = document.getElementById("display")
+    display.innerText += pi
+}
 
 
